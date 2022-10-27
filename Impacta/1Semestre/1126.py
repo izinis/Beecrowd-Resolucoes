@@ -1,7 +1,7 @@
 diasemana = input()
 diasentrega = int(input())
 
-lista = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado','domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado','domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado','domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado']
+lista = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado']
 
 num = lista.index(diasemana)
 
@@ -11,6 +11,6 @@ if diasentrega == 0:
     print("chega hoje!")
 
 else:
-    print("sera entregue",lista[entrega])
+    print("sera entregue",lista[entrega % 7])
 
 
